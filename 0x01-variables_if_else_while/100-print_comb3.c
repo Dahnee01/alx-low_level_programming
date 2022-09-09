@@ -8,25 +8,19 @@ int main(void)
 {
 int i, j;
 
-for (i = 48; i <= 57; i++)
+for (i = '0'; i <= '9'; i++)
 {
-for (j = 48; j <= 57; j++)
+for ( j = i + 1; j <= '9'; j++)
 {
-if (i == j || i <= j)
-{
-}
-else
+if (j != i)
 {
 putchar(i);
 putchar(j);
-if (i == 56 && j == 57)
+if (i == '8' && j == '9')
 {
 }
-else
-{
-putchar(44);
+putchar(',');
 putchar(' ');
-}
 }
 }
 }

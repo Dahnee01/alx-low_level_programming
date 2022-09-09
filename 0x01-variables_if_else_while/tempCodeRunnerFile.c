@@ -1,2 +1,1 @@
-
-else
+ * Return: Always 0
