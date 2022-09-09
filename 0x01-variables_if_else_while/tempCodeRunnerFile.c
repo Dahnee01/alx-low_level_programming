@@ -1,1 +1,1 @@
- * Return: Always 0
+putchar('\n');
