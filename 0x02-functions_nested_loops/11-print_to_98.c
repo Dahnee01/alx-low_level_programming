@@ -11,7 +11,7 @@ if ( n > 98 )
 {
 for ( int i = n; i >= 98; i--)
 {
-if (i !=n)
+if (i != n)
 {
 printf(", ");
 }
@@ -22,7 +22,7 @@ else
 {
 for (int i = n; i <= 98; i++)
 {
-if (i !=n)
+if (i != n)
 {
 printf(", ");
 }
