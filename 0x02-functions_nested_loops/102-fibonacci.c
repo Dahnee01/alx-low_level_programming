@@ -1,31 +1,28 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
  *
- * purpose - fibonacci
- *
- * Return: (0) always
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-unsigned long int lim = 4000000;
-unsigned long int bef = 0;
-unsigned long int aft = 1;
-unsigned long int R = 0;
-unsigned long int sum = 0;
+int i;
+long int fibonacci[50];
 
-while (lim > R)
-{
-R = bef + aft;
+fibonacci[0] = 1;
+fibonacci[1] = 2;
+printf("%ld, %ld, ", fibonacci[0], fibonacci[1]);
 
-if ((R % 2) == 0)
+for (i = 2; i < 50; i++)
 {
-sum += R;
+fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+if (i == 49)
+printf("%ld\n", fibonacci[i]);
+else
+printf("%ld, ", fibonacci[i]);
 }
 
-bef = aft;
-aft = R;
-}
-printf("%li\n", sum);
 return (0);
 }
