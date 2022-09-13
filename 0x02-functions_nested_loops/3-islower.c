@@ -1,16 +1,17 @@
 #include "main.h"
-
-/* 
-prints out a to z 10 times 
-*/
+/**
+ *_islower - checks for a lowercase character
+ *@c: letter being tested
+ * Return: Always 0
+ */
 int _islower(int c)
 {
 char ch;
 int lower = 0;
-for(ch ='a'; ch < 'z'; ch++){
-if(ch == c){
-lower=1;
+for (ch = 'a'; ch < 'z'; ch++)
+{
+if (ch == c)
+lower = 1;
 }
-}
-return(lower);
+return (lower);
 }
