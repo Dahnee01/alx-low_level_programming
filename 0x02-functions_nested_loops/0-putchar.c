@@ -1,5 +1,4 @@
 #include "_putchar.c"
-#include <unistd.h>
 #include "main.h"
 /**
  * main - Check description
@@ -9,7 +8,7 @@
 int main(void)
 {
 char name[8]= "_putchar";
-for (int i = 0; i < 8; i++)
+for(int i = 0; i < 8; i++)
 {
 _putchar(name[i]);
 }
