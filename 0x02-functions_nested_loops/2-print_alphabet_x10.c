@@ -4,13 +4,16 @@ prints out a to z 10 times
 */
 void print_alphabet_x10(void)
 {
-char ch;
-for (int i = 0; i < 10; i++)
+int a = 0;
+while (a < 10)
 {
-for (ch = 'a'; ch < 'z'; ch++)
+char b = 'a';
+while (b <= 'z')
 {
-_putchar(ch);
+_putchar(b);
+b++;
 }
 _putchar('\n');
+a++;
 }
 }
