@@ -7,8 +7,8 @@
 int _isupper(int c)
 {
 char ch = c;
-(isdigit(ch));
-if (isdigit(ch))
+(isupper(ch));
+if (isupper(ch))
 {
 return (1);
 }
