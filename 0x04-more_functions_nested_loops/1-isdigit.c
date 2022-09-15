@@ -1,17 +1,17 @@
 #include "main.h"
 /**
- * _isupper - A function that checks for isdigit character.
- * @c: An input character
- * Return: 1 if c is isdigit or 0 otherwise
+ * _isdigit - A function that checks for a digit (0 through 9).
+ * @c: An input integer
+ * Return: 1 if c is a digit or 0 otherwise
  */
 int _isdigit(int c)
 {
-int number = 1;
+char i = '0';
 int isdigit = 0;
 
-for (; isdigit <= 'Z'; isdigit++)
+for (; i <= '9'; i++)
 {
-if (c == isdigit)
+if (i == c)
 {
 isdigit = 1;
 break;
