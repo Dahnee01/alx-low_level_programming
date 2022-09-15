@@ -12,9 +12,9 @@ if  ( n < 1)
 {
 _putchar('\n');
 }
-for (;row < n; row++)
+for (; row < n; row++)
 {
-for (spaces = 0; spaces < n - row -1; spaces++)
+for (spaces = 0; spaces < n - row - 1; spaces++)
 {
 _putchar(' ');
 }
