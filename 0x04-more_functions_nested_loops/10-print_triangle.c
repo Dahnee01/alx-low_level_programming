@@ -7,7 +7,7 @@
 
 void print_triangle(int size)
 {
-int n, row,column, spaces, nexthash;
+int n, row, column, spaces;
 n = size;
 if  ( n < 1){
 _putchar("\n");
