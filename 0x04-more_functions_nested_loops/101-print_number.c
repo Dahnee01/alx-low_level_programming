@@ -1,6 +1,5 @@
 #include "main.h"
 void print_integer(int m);
-
 /**
  * print_number - a function that prints an integer.
  * @n: An input integer
@@ -18,7 +17,6 @@ print_integer(n * -1);
 else
 print_integer(n);
 }
-
 /**
  * print_integer - A function to priting n
  * @m: an input unsigned integer
@@ -27,7 +25,6 @@ print_integer(n);
 void print_integer(int m)
 {
 int i = 1000000000;
-
 for (; i >= 1; i /= 10)
 if (m / i != 0)
 {
