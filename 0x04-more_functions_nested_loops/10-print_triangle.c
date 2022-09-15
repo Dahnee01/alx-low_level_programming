@@ -10,18 +10,18 @@ void print_triangle(int size)
 int n, row, column, spaces;
 n = size;
 if  ( n < 1){
-_putchar("\n");
+_putchar('\n');
 }
 for (row = 0; row < n; row++)
 {
 for (spaces = 0; spaces < n - row - 1; spaces++)
 {
-_putchar(" ");
+_putchar(' ');
 }
 for (column = 0; column <= row; column++)
 {
-_putchar("#");
+_putchar('#');
 }
-_putchar("\n");
+_putchar('\n');
 }
 }
