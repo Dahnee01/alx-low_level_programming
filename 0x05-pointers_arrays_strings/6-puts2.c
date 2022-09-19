@@ -1,19 +1,22 @@
 #include "main.h"
 
 /**
- * print_line - a function that draws a straight line in the terminal.
- * followed by a new line.
- * @n: An input integer
- * Return: Always 0
+ * puts2 - a function that prints every other character of a string,
+ * starting with the first character, followed by a new line.
+ * @str: An input string
+ * Return: Nothing
  */
-void print_line(int n)
+void puts2(char *str)
 {
-int i = 0;
+	int len = 0, i = 0;
 
-if (n > 0)
-{
-for (; i < n; i++)
-_putchar('_');
-}
-_putchar('\n');
+	while (str[len] != '\0')
+		len++;
+
+	len -= 1;
+
+	for (; i <= len; i += 2)
+		_putchar(str[i]);
+
+	_putchar('\n');
 }

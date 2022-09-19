@@ -1,36 +1,36 @@
-#include "main.h"
-void print_integer(int m);
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * print_number - a function that prints an integer.
- * @n: An input integer
- * Return: Nothing
+ * main - program that generates random valid
+ * passwords for the program 101-crackme
+ *
+ * Return: Always 0 (Success)
  */
-void print_number(int n)
+
+int main(void)
 {
-if (n == 0)
-_putchar('0');
-else if (n < 0)
+int i, sum, n;
+int pass[100];
+
+sum = 0;
+
+srand(time(NULL));
+
+for (i = 0; i < 100; i++)
 {
-_putchar('-');
-print_integer(n * -1);
+pass[i] = rand() % 78;
+sum += (pass[i] + '0');
+putchar(pass[i] + '0');
+if ((2772 - sum) - '0' < 78)
+{
+n = 2772 - sum - '0';
+sum += n;
+putchar(n + '0');
+break;
 }
-else
-print_integer(n);
 }
 
-/**
- * print_integer - A function to priting n
- * @m: an input unsigned integer
- * Return: Nothing
- */
-void print_integer(int m)
-{
-int i = 1000000000;
-
-for (; i >= 1; i /= 10)
-if (m / i != 0)
-{
-_putchar((m / i) % 10 + '0');
-}
+return (0);
 }
