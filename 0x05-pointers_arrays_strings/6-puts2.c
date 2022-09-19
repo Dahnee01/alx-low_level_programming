@@ -1,24 +1,19 @@
 #include "main.h"
 
 /**
- * puts2 - prints one char out of 2
- * @str: type
- *
+ * print_line - a function that draws a straight line in the terminal.
+ * followed by a new line.
+ * @n: An input integer
+ * Return: Always 0
  */
-
-void puts2(char *str)
+void print_line(int n)
 {
-int i, j = 0;
+int i = 0;
 
-while (str[i] != '\0')
+if (n > 0)
 {
-i++;
-}
-
-while (j < i)
-{
-_putchar(str[j]);
-j = j + 2;
+for (; i < n; i++)
+_putchar('_');
 }
 _putchar('\n');
 }
